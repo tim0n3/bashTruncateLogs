@@ -1,0 +1,13 @@
+[Unit]
+Description=Periodically truncate log files in /var/log
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/trunc-logs.sh
+WorkingDirectory=/root/
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
