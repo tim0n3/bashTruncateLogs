@@ -1,5 +1,5 @@
 # bashTruncateLogs
-Zero all files in /var/log/ 
+Zero all files in /var/log/ courtesy of chatgpt + some of my tweaking to make stuff work.
 
 # Log Truncation Service
 
@@ -15,14 +15,12 @@ Logs can accumulate over time and consume disk space. This script automates the 
 
    Clone this repository to your local machine:
 
-   ```bash
+   ```
    git clone https://github.com/your-username/log-truncation-service.git
    cd log-truncation-service
+   ```
  
-Certainly! Here's a comprehensive README.md template that includes installation instructions for the script, systemd service, and systemd timer setup:
 
-markdown
-Copy code
 # Log Truncation Service
 
 This repository contains a script, systemd service, and systemd timer that work together to periodically truncate log files in the `/var/log` directory.
