@@ -19,26 +19,6 @@ Logs can accumulate over time and consume disk space. This script automates the 
    git clone https://github.com/your-username/log-truncation-service.git
    cd log-truncation-service
    ```
- 
-
-# Log Truncation Service
-
-This repository contains a script, systemd service, and systemd timer that work together to periodically truncate log files in the `/var/log` directory.
-
-## Introduction
-
-Logs can accumulate over time and consume disk space. This script automates the process of truncating log files, effectively clearing their content while retaining the file structure. The systemd service and timer ensure that this truncation process occurs regularly, preventing log files from growing excessively.
-
-## Installation
-
-1. **Clone the Repository**
-
-   Clone this repository to your local machine:
-
-   ```
-   git clone https://github.com/your-username/log-truncation-service.git
-   cd log-truncation-service
-   ```
 
 Create the Service Unit File
 
